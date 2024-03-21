@@ -8,39 +8,37 @@
 
 .main{
     margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* HEADER */
+
 .header{
-    width: 100%;
     display: flex;
-    flex-direction: row;
-    overflow-x: scroll;
+    justify-content: end;
+    margin-right:20px;
+    margin-top:20px;
 }
 
-.header .carrusel_prod{
-    width: 100%;
-    display: flex;
-}
-
-.header .carrusel_prod a{
-    margin: 20px;
-    font-size: 15px;
-    text-decoration: none;
+.btn_carrito i{
+    font-size: 30px;
     color: black;
 }
-
 /* CONTENEDOR DE PRODUCTOS*/
 
 
 .producto{
-    height:80vh;
+    z-index: -1;
+    height:78vh;
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin-bottom: 100px;
-    margin-top: 20px;
+    margin-top: 60px;
     flex-wrap: nowrap;
+    position:sticky;
 }
 
 .cont_productos{
@@ -129,4 +127,74 @@
 .box_obtener button{
     font-size: 1.5em;
     width: 150px;
+}
+
+/* SECCION OBTENER*/
+
+.obtener{
+    z-index: 1;
+    width: 500px;
+    height: 93vh;
+    background: aliceblue;
+    border: 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.box_obtener{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.box_obtener i{
+    color: black;
+}
+.box_x{
+    display: flex;
+    align-items: end;
+    margin-left: 400px;
+    font-size: 50px;
+}
+
+
+.box_ropa{
+    border: 2px solid;
+}
+
+.box_ropa img{
+    height: 60vh;
+    width: auto;
+}
+
+.text_obtener {
+    margin: 20px;
+}
+.text_obtener h1{
+    font-size: 30px; 
+}
+
+.text_obtener i{
+    font-size: 50px;
+}
+
+.precio{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.precio h4{
+    margin-left: 50px;
+}
+
+.cantidad_boton{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cantidad_boton input{
+    width: 250px;
 }
