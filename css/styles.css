@@ -30,6 +30,10 @@
     color: black;
 }
 
+.btn_carrito i{
+    font-size: 40px;
+}
+
 /* CONTENEDOR DE PRODUCTOS*/
 
 
@@ -129,4 +133,10 @@
 .box_obtener button{
     font-size: 1.5em;
     width: 150px;
+    
+}
+
+.box_obtener a{
+    text-decoration: none;
+    color: black;
 }
